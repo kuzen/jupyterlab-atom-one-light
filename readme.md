@@ -1,4 +1,4 @@
-# Atom One Light for Jupyter
+# Atom One Light Theme for Jupyter Lab
 
 Inspired by [Vscode Atom One Light](https://github.com/akamud/vscode-theme-onelight) which is base on [Atom's One Light theme](https://github.com/atom/one-light-syntax).
 
