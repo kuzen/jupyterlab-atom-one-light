@@ -51,6 +51,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --atom-one-light-foreground-0: #383A42;
   --atom-one-light-background-0: #FAFAFA;
   --atom-one-light-background-1: #f0f0f0;
+  --atom-one-light-background-2: #e0e0e0;
   --atom-one-light-off-white: #EEEEEE;
 
   --atom-one-light-button-gray: #12141766;
@@ -166,9 +167,9 @@ all of MD as it is not optimized for dense, information rich UIs.
    * The following variables, specify the visual styling of borders in JupyterLab.
    */
   --jp-border-width: 1px;
-  --jp-border-color0: var(--atom-one-light-background-0);
-  --jp-border-color1: var(--atom-one-light-background-0);
-  --jp-border-color2: var(--atom-one-light-background-0);
+  --jp-border-color0: var(--atom-one-light-background-1);
+  --jp-border-color1: var(--atom-one-light-background-1);
+  --jp-border-color2: var(--atom-one-light-background-1);
   --jp-border-color3: var(--atom-one-light-background-0);
   --jp-border-radius: 3px;
 
@@ -273,15 +274,15 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
   /* Edit the background and stuff */
   --jp-layout-color0: var(--atom-one-light-background-0);
-  --jp-layout-color1: var(--atom-one-light-background-0);
+  --jp-layout-color1: var(--atom-one-light-background-1);
 
   /* these are for unselected tabs amongst other things... */
   --jp-layout-color2: var(--atom-one-light-background-0);
 
   /* this is for the area behind the tabs of the notebooks open */
-  --jp-layout-color3: var(--atom-one-light-background-0);
+  --jp-layout-color3: var(--atom-one-light-background-1);
 
-  --jp-layout-color4: var(--atom-one-light-background-0);
+  --jp-layout-color4: var(--atom-one-light-background-2);
 
   /* Colour for all the SVG buttons (sidebar, topbar etc) */
   --jp-icon-contrast-color0: var(--atom-one-light-button-gray);
