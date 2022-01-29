@@ -90,7 +90,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-inpromt-colour: var(--atom-one-light-background-0);
 
   /* Cell specific styles */
-  --jp-cell-padding: 0px 10px 10px 0px;
+  --jp-cell-padding: 10px 10px 10px 10px;
   /* T R B L */
   --jp-cell-collapser-width: 8px;
   --jp-cell-collapser-min-height: 20px;
@@ -100,7 +100,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* background colour of all cells */
   --jp-cell-editor-border-color: var(--atom-one-light-background-1);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--atom-one-light-off-white);
-  --jp-cell-editor-active-background: var(--atom-one-light-background-0);
+  --jp-cell-editor-active-background: var(--atom-one-light-background-1);
   /* background colour of current cell */
   --jp-cell-editor-active-border-color: var(--atom-one-light-blue-2);
   /* border colour of current cell */
@@ -277,7 +277,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-layout-color1: var(--atom-one-light-background-1);
 
   /* these are for unselected tabs amongst other things... */
-  --jp-layout-color2: var(--atom-one-light-background-0);
+  --jp-layout-color2: var(--atom-one-light-background-2);
 
   /* this is for the area behind the tabs of the notebooks open */
   --jp-layout-color3: var(--atom-one-light-background-1);
@@ -298,29 +298,29 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-brand-color2: var(--atom-one-light-off-white);
   --jp-brand-color3: var(--md-blue-100);
 
-  --jp-accent-color0: var(--md-green-700);
-  --jp-accent-color1: var(--md-green-500);
+  --jp-accent-color0: var(--md-green-500);
+  --jp-accent-color1: var(--md-green-400);
   --jp-accent-color2: var(--md-green-300);
   --jp-accent-color3: var(--md-green-100);
 
   /* State colors (warn, error, success, info) */
-  --jp-warn-color0: var(--md-orange-700);
-  --jp-warn-color1: var(--md-orange-500);
+  --jp-warn-color0: var(--md-orange-500);
+  --jp-warn-color1: var(--md-orange-400);
   --jp-warn-color2: var(--md-orange-300);
   --jp-warn-color3: var(--md-orange-100);
 
-  --jp-error-color0: var(--md-red-700);
-  --jp-error-color1: var(--md-red-500);
+  --jp-error-color0: var(--md-red-500);
+  --jp-error-color1: var(--md-red-400);
   --jp-error-color2: var(--md-red-300);
   --jp-error-color3: var(--md-red-100);
 
-  --jp-success-color0: var(--md-green-700);
-  --jp-success-color1: var(--md-green-500);
+  --jp-success-color0: var(--md-green-500);
+  --jp-success-color1: var(--md-green-400);
   --jp-success-color2: var(--md-green-300);
   --jp-success-color3: var(--md-green-100);
 
-  --jp-info-color0: var(--md-cyan-700);
-  --jp-info-color1: var(--md-cyan-500);
+  --jp-info-color0: var(--md-cyan-500);
+  --jp-info-color1: var(--md-cyan-400);
   --jp-info-color2: var(--md-cyan-300);
   --jp-info-color3: var(--md-cyan-100);
 
@@ -348,7 +348,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-input-box-shadow: inset 0 0 2px var(--atom-one-light-off-white);
   --jp-input-active-background: var(--jp-layout-color0);
   --jp-input-hover-background: var(--jp-layout-color2);
-  --jp-input-background: var(--md-grey-800);
+  --jp-input-background: var(--jp-layout-color0);
   --jp-input-border-color: var(--jp-border-color1);
   --jp-input-active-border-color: var(--jp-brand-color1);
 
@@ -410,4 +410,30 @@ all of MD as it is not optimized for dense, information rich UIs.
 
 ::-webkit-scrollbar-thumb {
   background-color: #a7a7a7;
+}
+
+/* line number background */
+.cm-s-jupyter .CodeMirror-activeline-background,
+.cm-s-jupyter .CodeMirror-gutter {
+  background-color: var(--atom-one-light-background-0);
+}
+
+.jp-DebuggerSidebar-body .jp-stack-panel-header {
+  border-width: 0px;
+  background-color: var(--jp-layout-color2);
+}
+
+.lm-ScrollBar[data-orientation='horizontal']  {
+  min-height: 8px;
+  max-height: 8px;
+  min-width: 45px;
+  border-width: 0px;
+}
+
+.lm-ScrollBar-button[data-action='decrement'] {
+  display: none;
+}
+
+.lm-ScrollBar-button[data-action='increment'] {
+  display: none;
 }
