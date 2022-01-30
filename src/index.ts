@@ -25,7 +25,7 @@
         name: 'Atom One Light',
         displayName: trans.__('Atom One Light'),
         isLight: true,
-        themeScrollbars: false,
+        themeScrollbars: true,
         load: () => manager.loadCSS(style),
         unload: () => Promise.resolve(undefined)
       });

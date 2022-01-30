@@ -24,16 +24,14 @@ all of MD as it is not optimized for dense, information rich UIs.
 */
 
 :root {
-
-
   --atom-one-light-cyan: #56B6C2;
   --atom-one-light-blue-0: #61afef;
   --atom-one-light-blue-1: #0184bc;
   --atom-one-light-blue-2: #526fff;
+  --atom-one-light-blue-3: #4078f2;
   --atom-one-light-green-0: #98C379;
   --atom-one-light-green-1: #50a14f;
   --atom-one-light-accent: #AEB9F5;
-  --atom-one-light-silver: #AAAAAA;
   --atom-one-light-purple: #a626a4;
   --atom-one-light-gutter: #666D7A;
   --atom-one-light-red-0: #DF6A73;
@@ -41,17 +39,19 @@ all of MD as it is not optimized for dense, information rich UIs.
   --atom-one-light-mono-0: #828997;
   --atom-one-light-mono-1: #616161;
   --atom-one-light-mono-2: #383a42;
-  --atom-one-light-orange-0: #d19a66;
+  --atom-one-light-orange-0: #d19a66; /* unused */
   --atom-one-light-orange-1: #f89406;
   --atom-one-light-orange-2: #986801;
-  --atom-one-light-gray-0: #abb2bf;
+  --atom-one-light-gray-0: #a7a7a7; /* unused */
   --atom-one-light-gray-1: #4E576A;
-  --atom-one-light-gray-2: #555e73;
-
-  --atom-one-light-foreground-0: #383A42;
+  --atom-one-light-gray-2: #555e73; /* unused */
+  --atom-one-light-foreground-0: #383A42; /* unused */
+  --atom-one-light-foreground-1: #646464; /* unused */
+  --atom-one-light-foreground-2: #727272; /* unused */
   --atom-one-light-background-0: #FAFAFA;
   --atom-one-light-background-1: #f0f0f0;
   --atom-one-light-background-2: #e0e0e0;
+  --atom-one-light-background-3: #dbdbdc; /* unused */
   --atom-one-light-off-white: #EEEEEE;
 
   --atom-one-light-button-gray: #12141766;
@@ -74,7 +74,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-comment-color: var(--atom-one-light-comment-gray);
   --jp-mirror-editor-string-color: var(--atom-one-light-green-1);
   --jp-mirror-editor-string-2-color: var(--atom-one-light-red-1);
-  --jp-mirror-editor-meta-color: var(--atom-one-light-cyan);
+  --jp-mirror-editor-meta-color: var(--atom-one-light-blue-3);
   --jp-mirror-editor-qualifier-color: var(--atom-one-light-accent);
   --jp-mirror-editor-builtin-color: var(--atom-one-light-blue-1);
   --jp-mirror-editor-bracket-color: var(--atom-one-light-mono-0);
@@ -205,10 +205,11 @@ all of MD as it is not optimized for dense, information rich UIs.
    * Use these against the brand/accent/warn/error colors.
    * These will typically go from light to darker, in both a dark and light theme.
    */
-  --jp-ui-inverse-font-color0: rgba(0, 0, 0, 1.0);
-  --jp-ui-inverse-font-color1: rgba(0, 0, 0, 0.8);
-  --jp-ui-inverse-font-color2: rgba(0, 0, 0, 0.5);
-  --jp-ui-inverse-font-color3: rgba(0, 0, 0, 0.3);
+  --jp-inverse-layout-color0: #111111;
+  --jp-inverse-layout-color1: var(--md-grey-900);
+  --jp-inverse-layout-color2: var(--md-grey-800);
+  --jp-inverse-layout-color3: var(--md-grey-700);
+  --jp-inverse-layout-color4: var(--md-grey-600);
 
   /* Content Fonts
    *
@@ -237,11 +238,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(255, 255, 255, 1.0);
-  --jp-content-font-color1: var(--atom-one-light-foreground-0);
-  /* this will colour all markdown and output text */
-  --jp-content-font-color2: rgba(255, 255, 255, 0.7);
-  --jp-content-font-color3: rgba(255, 255, 255, 0.5);
+  --jp-content-font-color0: rgba(0, 0, 0, 0.87);
+  --jp-content-font-color1: rgba(0, 0, 0, 0.54);
+  --jp-content-font-color2: rgba(0, 0, 0, 0.38);
+  --jp-content-font-color3: rgba(0, 0, 0, 0.17);
 
   --jp-content-link-color: var(--atom-one-light-blue-0);
 
@@ -287,9 +287,6 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Colour for all the SVG buttons (sidebar, topbar etc) */
   --jp-icon-contrast-color0: var(--atom-one-light-button-gray);
   --jp-icon-contrast-color1: var(--atom-one-light-button-gray);
-  --jp-inverse-layout-color1: white;
-  --jp-inverse-layout-color2: var(--atom-one-light-button-gray);
-  --jp-inverse-layout-color3: var(--atom-one-light-button-gray);
 
   /* Brand/accent */
   --jp-brand-color0: var(--atom-one-light-blue-0);
@@ -373,17 +370,15 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* scrollbar related styles. Supports every browser except Edge.
 	 * On Firefox, only the color settings are respected.
 	 */
-  --jp-scrollbar-background-color: var(--jp-layout-color0);
+  --jp-scrollbar-background-color: var(--atom-one-light-background-0);
   /* the minimum gap between the thumb and the ends of a scrollbar */
   --jp-scrollbar-endpad: 3px;
   /* need to specify thumb color as an RGB triplet */
-  --jp-scrollbar-thumb-color: 213, 196, 161;
+  --jp-scrollbar-thumb-color: 167, 167, 167;
   /* the space in between the sides of the thumb and the track */
   --jp-scrollbar-thumb-margin: 5px;
   /* set to a large-ish value for rounded endcaps on the thumb */
   --jp-scrollbar-thumb-radius: 9px;
-
-
 
   /* Notebook specific styles */
   --jp-notebook-padding: 0px 10px 0px 0px;
@@ -397,19 +392,6 @@ all of MD as it is not optimized for dense, information rich UIs.
    *notebook. This padding is to enable a 'scroll past end' feature in a notebook.
    */
   --jp-notebook-scroll-padding: calc(100% - var(--jp-code-font-size) * var(--jp-code-line-height) - var(--jp-code-padding) - var(--jp-cell-padding) - 1px);
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #a7a7a7;
 }
 
 /* line number background */
@@ -430,10 +412,32 @@ all of MD as it is not optimized for dense, information rich UIs.
   border-width: 0px;
 }
 
+.lm-ScrollBar[data-orientation='horizontal'] .lm-ScrollBar-thumb {
+  height: 100%;
+  min-width: 15px;
+  border-width: 0px;
+}
+
 .lm-ScrollBar-button[data-action='decrement'] {
   display: none;
 }
 
 .lm-ScrollBar-button[data-action='increment'] {
   display: none;
+}
+
+.p-SplitPanel[data-orientation='horizontal'] > .p-SplitPanel-handle:after, .lm-SplitPanel[data-orientation='horizontal'] > .lm-SplitPanel-handle:after {
+  min-width: 16px;
+}
+
+.jp-DirListing-item.jp-mod-selected {
+  background: #dcdcdc;
+}
+
+.jp-DirListing-item.jp-mod-selected .jp-icon-selectable[fill] {
+  fill: var(--jp-inverse-layout-color3);
+}
+
+.jp-DirListing-item.jp-mod-selected .jp-icon-selectable[fill] .jp-icon-warn0[fill] {
+  fill: var(--jp-warn-color0);
 }
