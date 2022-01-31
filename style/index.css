@@ -11,3 +11,106 @@ tt, code, kbd, samp, pre {
   font-size: var(--jp-code-font-size) !important;
   line-height: var(--jp-code-line-height);
 }
+
+/* line number background */
+.cm-s-jupyter .CodeMirror-activeline-background,
+.cm-s-jupyter .CodeMirror-gutter {
+  background-color: var(--atom-one-light-background-0);
+}
+
+.jp-DebuggerSidebar-body .jp-stack-panel-header {
+  border-width: 0px;
+  background-color: var(--jp-layout-color2);
+}
+
+.lm-ScrollBar[data-orientation='horizontal']  {
+  min-height: 8px;
+  max-height: 8px;
+  min-width: 45px;
+  border-width: 0px;
+}
+
+.lm-ScrollBar[data-orientation='horizontal'] .lm-ScrollBar-thumb {
+  height: 100%;
+  min-width: 15px;
+  border-width: 0px;
+}
+
+.lm-ScrollBar-button[data-action='decrement'] {
+  display: none;
+}
+
+.lm-ScrollBar-button[data-action='increment'] {
+  display: none;
+}
+
+.p-SplitPanel[data-orientation='horizontal'] > .p-SplitPanel-handle:after, .lm-SplitPanel[data-orientation='horizontal'] > .lm-SplitPanel-handle:after {
+  min-width: 16px;
+}
+
+.jp-DirListing-item.jp-mod-selected {
+  background: var(--jp-layout-color2);
+}
+
+.lm-MenuBar.lm-mod-active .lm-MenuBar-item.lm-mod-active {
+  border-color: transparent;
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab,
+.lm-DockPanel-widget,
+.lm-DockPanel-tabBar {
+  border: none;
+}
+
+
+.jp-SideBar.lm-TabBar.jp-mod-left,
+.jp-SideBar.lm-TabBar.jp-mod-right,
+#jp-left-stack,
+#jp-right-stack {
+  border-color: var(--jp-layout-color2);
+}
+
+.jp-DirListing-header {
+  border: none;
+}
+
+.jp-DirListing-item:hover:not(.jp-mod-selected) {
+  background: var(--jp-layout-color2);
+}
+
+
+.jp-DirListing-item.jp-mod-selected .jp-icon-selectable[fill] {
+  fill: var(--jp-inverse-layout-color3);
+}
+
+.jp-DirListing-item.jp-mod-selected .jp-icon-selectable[fill] .jp-icon-warn0[fill] {
+  fill: var(--jp-warn-color0);
+}
+
+.jp-SideBar.lm-TabBar.jp-mod-left .lm-TabBar-tab + .lm-TabBar-tab.lm-mod-current,
+.jp-SideBar.lm-TabBar.jp-mod-left .lm-TabBar-tab.lm-mod-current + .lm-TabBar-tab,
+.jp-SideBar.lm-TabBar.jp-mod-right .lm-TabBar-tab.lm-mod-current:last-child
+.jp-SideBar.lm-TabBar.jp-mod-right .lm-TabBar-tab + .lm-TabBar-tab.lm-mod-current,
+.jp-SideBar.lm-TabBar.jp-mod-right .lm-TabBar-tab.lm-mod-current + .lm-TabBar-tab,
+.jp-SideBar.lm-TabBar.jp-mod-left .lm-TabBar-tab.lm-mod-current:last-child {
+  border-color: var(--jp-layout-color2);
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab,
+.lm-DockPanel-widget,
+.lm-DockPanel-tabBar {
+  border: none;
+}
+
+#jp-top-panel {
+  border-bottom: none;
+}
+
+body[data-jp-theme-light='true'] .jp-DebuggerEditor-highlight {
+  background-color: var(--atom-one-light-yellow);
+  outline-color: transparent;
+}
+
+[data-jp-debugger='true'].jp-Editor .jp-mod-readOnly {
+  background: var(--jp-layout-color0);
+}

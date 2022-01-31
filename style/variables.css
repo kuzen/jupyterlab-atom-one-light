@@ -24,70 +24,58 @@ all of MD as it is not optimized for dense, information rich UIs.
 */
 
 :root {
-  --atom-one-light-cyan: #56B6C2;
-  --atom-one-light-blue-0: #61afef;
-  --atom-one-light-blue-1: #0184bc;
-  --atom-one-light-blue-2: #526fff;
-  --atom-one-light-blue-3: #4078f2;
-  --atom-one-light-green-0: #98C379;
-  --atom-one-light-green-1: #50a14f;
-  --atom-one-light-accent: #AEB9F5;
-  --atom-one-light-purple: #a626a4;
-  --atom-one-light-gutter: #666D7A;
-  --atom-one-light-red-0: #DF6A73;
-  --atom-one-light-red-1: #e05252;
-  --atom-one-light-mono-0: #828997;
-  --atom-one-light-mono-1: #616161;
-  --atom-one-light-mono-2: #383a42;
-  --atom-one-light-orange-0: #d19a66; /* unused */
-  --atom-one-light-orange-1: #f89406;
-  --atom-one-light-orange-2: #986801;
-  --atom-one-light-gray-0: #a7a7a7; /* unused */
-  --atom-one-light-gray-1: #4E576A;
-  --atom-one-light-gray-2: #555e73; /* unused */
-  --atom-one-light-foreground-0: #383A42; /* unused */
-  --atom-one-light-foreground-1: #646464; /* unused */
-  --atom-one-light-foreground-2: #727272; /* unused */
-  --atom-one-light-background-0: #FAFAFA;
-  --atom-one-light-background-1: #f0f0f0;
-  --atom-one-light-background-2: #e0e0e0;
-  --atom-one-light-background-3: #dbdbdc; /* unused */
-  --atom-one-light-off-white: #EEEEEE;
-
-  --atom-one-light-button-gray: #12141766;
-  --atom-one-light-comment-gray: #A0A1A7;
-  --atom-one-light-off-white: #EEEEEE;
+  --one-light-cyan: #56B6C2;
+  --one-light-blue-0: #61afef;
+  --one-light-blue-1: #0184bc;
+  --one-light-blue-2: #526fff;
+  --one-light-blue-3: #4078f2;
+  --one-light-yellow: #f4f4af;
+  --one-light-green-0: #98C379;
+  --one-light-green-1: #50a14f;
+  --one-light-accent: #AEB9F5;
+  --one-light-purple: #a626a4;
+  --one-light-red-0: #DF6A73;
+  --one-light-red-1: #e05252;
+  --one-light-orange-0: #f89406;
+  --one-light-orange-1: #986801;
+  --one-light-gray: #12141766;
+  --one-light-mono-0: #828997;
+  --one-light-mono-1: #616161;
+  --one-light-mono-2: #383a42;
+  --one-light-white-0: #FAFAFA;
+  --one-light-white-1: #f0f0f0;
+  --one-light-white-2: #e0e0e0;
 
 
   /* Code mirror SYNTAX HIGHLIGHTING styles */
-  --jp-mirror-editor-keyword-color: var(--atom-one-light-purple);
-  --jp-mirror-editor-atom-color: var(--atom-one-light-off-white);
-  --jp-mirror-editor-number-color: var(--atom-one-light-orange-2);
-  --jp-mirror-editor-def-color: var(--atom-one-light-red-0);
-  --jp-mirror-editor-variable-color: var(--atom-one-light-mono-2);
-  --jp-mirror-editor-variable-2-color: var(--atom-one-light-orange-1);
-  --jp-mirror-editor-variable-3-color: var(--atom-one-light-purple);
-  --jp-mirror-editor-punctuation-color: var(--atom-one-light-mono-0);
-  --jp-mirror-editor-property-color: var(--atom-one-light-mono-2);
-  --jp-mirror-editor-operator-color: var(--atom-one-light-cyan);
-  /* --jp-mirror-editor-comment-color: var(--atom-one-light-gray-2); */
-  --jp-mirror-editor-comment-color: var(--atom-one-light-comment-gray);
-  --jp-mirror-editor-string-color: var(--atom-one-light-green-1);
-  --jp-mirror-editor-string-2-color: var(--atom-one-light-red-1);
-  --jp-mirror-editor-meta-color: var(--atom-one-light-blue-3);
-  --jp-mirror-editor-qualifier-color: var(--atom-one-light-accent);
-  --jp-mirror-editor-builtin-color: var(--atom-one-light-blue-1);
-  --jp-mirror-editor-bracket-color: var(--atom-one-light-mono-0);
-  --jp-mirror-editor-tag-color: var(--atom-one-light-red-1);
-  --jp-mirror-editor-attribute-color: var(--atom-one-light-red-0);
-  --jp-mirror-editor-header-color: var(--atom-one-light-blue-0);
-  --jp-mirror-editor-quote-color: var(--atom-one-light-green-0);
-  --jp-mirror-editor-link-color: var(--atom-one-light-red-0);
-  --jp-mirror-editor-error-color: var(--atom-one-light-red-0);
-  --jp-mirror-editor-hr-color: var(--atom-one-light-mono-0);
+  --jp-mirror-editor-keyword-color: var(--one-light-purple);
+  --jp-mirror-editor-atom-color: var(--one-light-white-1);
+  --jp-mirror-editor-number-color: var(--one-light-orange-1);
+  --jp-mirror-editor-def-color: var(--one-light-red-0);
+  --jp-mirror-editor-variable-color: var(--one-light-mono-2);
+  --jp-mirror-editor-variable-2-color: var(--one-light-orange-0);
+  --jp-mirror-editor-variable-3-color: var(--one-light-purple);
+  --jp-mirror-editor-punctuation-color: var(--one-light-mono-0);
+  --jp-mirror-editor-property-color: var(--one-light-mono-2);
+  --jp-mirror-editor-operator-color: var(--one-light-cyan);
+  /* --jp-mirror-editor-comment-color: var(--one-light-gray-2); */
+  --jp-mirror-editor-comment-color: var(--one-light-gray);
+  --jp-mirror-editor-string-color: var(--one-light-green-1);
+  --jp-mirror-editor-string-2-color: var(--one-light-red-1);
+  --jp-mirror-editor-meta-color: var(--one-light-blue-3);
+  --jp-mirror-editor-qualifier-color: var(--one-light-accent);
+  --jp-mirror-editor-builtin-color: var(--one-light-blue-1);
+  --jp-mirror-editor-bracket-color: var(--one-light-mono-0);
+  --jp-mirror-editor-tag-color: var(--one-light-red-1);
+  --jp-mirror-editor-attribute-color: var(--one-light-red-0);
+  --jp-mirror-editor-header-color: var(--one-light-blue-0);
+  --jp-mirror-editor-quote-color: var(--one-light-green-0);
+  --jp-mirror-editor-link-color: var(--one-light-red-0);
+  --jp-mirror-editor-error-color: var(--one-light-red-0);
+  --jp-mirror-editor-hr-color: var(--one-light-mono-0);
 
   /* The space to the left of cells (command mode selector) */
-  --jp-inpromt-colour: var(--atom-one-light-background-0);
+  --jp-inpromt-colour: var(--one-light-white-0);
 
   /* Cell specific styles */
   --jp-cell-padding: 10px 10px 10px 10px;
@@ -96,25 +84,25 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
 
-  --jp-cell-editor-background: var(--atom-one-light-background-1);
+  --jp-cell-editor-background: var(--one-light-white-1);
   /* background colour of all cells */
-  --jp-cell-editor-border-color: var(--atom-one-light-background-1);
-  --jp-cell-editor-box-shadow: inset 0 0 2px var(--atom-one-light-off-white);
-  --jp-cell-editor-active-background: var(--atom-one-light-background-1);
+  --jp-cell-editor-border-color: transparent;
+  --jp-cell-editor-box-shadow: inset 0 0 2px var(--one-light-white-1);
+  --jp-cell-editor-active-background: var(--one-light-white-1);
   /* background colour of current cell */
-  --jp-cell-editor-active-border-color: var(--atom-one-light-blue-2);
+  --jp-cell-editor-active-border-color: var(--one-light-blue-2);
   /* border colour of current cell */
   --jp-cell-prompt-width: 75px;
   --jp-cell-prompt-font-family: "JetBrains Mono", Menlo, monospace;
   --jp-cell-prompt-letter-spacing: 0px;
   --jp-cell-prompt-opacity: 1.0;
   --jp-cell-prompt-not-active-opacity: 1.0;
-  --jp-cell-prompt-not-active-font-color: var(--atom-one-light-gray-1);
-  --jp-cell-inprompt-font-color: var(--atom-one-light-mono-0);
-  --jp-cell-outprompt-font-color: var(--atom-one-light-gray-1);
+  --jp-cell-prompt-not-active-font-color: var(--one-light-mono-1);
+  --jp-cell-inprompt-font-color: var(--one-light-mono-0);
+  --jp-cell-outprompt-font-color: var(--one-light-mono-1);
 
-  --jp-editor-selected-background: var(--atom-one-light-background-0);
-  --jp-editor-selected-focused-background: var(--atom-one-light-background-0);
+  --jp-editor-selected-background: var(--one-light-white-0);
+  --jp-editor-selected-focused-background: var(--one-light-white-0);
 
   /* Elevation */
   --jp-shadow-base-lightness: 32;
@@ -167,10 +155,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    * The following variables, specify the visual styling of borders in JupyterLab.
    */
   --jp-border-width: 1px;
-  --jp-border-color0: var(--atom-one-light-background-1);
-  --jp-border-color1: var(--atom-one-light-background-1);
-  --jp-border-color2: var(--atom-one-light-background-1);
-  --jp-border-color3: var(--atom-one-light-background-0);
+  --jp-border-color0: var(--one-light-white-0);
+  --jp-border-color1: var(--one-light-white-1);
+  --jp-border-color2: var(--one-light-white-1);
+  --jp-border-color3: var(--one-light-white-0);
   --jp-border-radius: 3px;
 
   /* UI Fonts
@@ -196,10 +184,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    * In a light theme, these go from dark to light.
    */
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: var(--atom-one-light-mono-2);
-  --jp-ui-font-color1: var(--atom-one-light-mono-1);
-  --jp-ui-font-color2: var(--atom-one-light-mono-1);
-  --jp-ui-font-color3: var(--atom-one-light-mono-0);
+  --jp-ui-font-color0: var(--one-light-mono-2);
+  --jp-ui-font-color1: var(--one-light-mono-1);
+  --jp-ui-font-color2: var(--one-light-mono-1);
+  --jp-ui-font-color3: var(--one-light-mono-0);
 
   /*
    * Use these against the brand/accent/warn/error colors.
@@ -243,7 +231,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-font-color2: rgba(0, 0, 0, 0.38);
   --jp-content-font-color3: rgba(0, 0, 0, 0.17);
 
-  --jp-content-link-color: var(--atom-one-light-blue-0);
+  --jp-content-link-color: var(--one-light-blue-0);
 
   --jp-content-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
@@ -273,26 +261,20 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
   /* Edit the background and stuff */
-  --jp-layout-color0: var(--atom-one-light-background-0);
-  --jp-layout-color1: var(--atom-one-light-background-1);
-
-  /* these are for unselected tabs amongst other things... */
-  --jp-layout-color2: var(--atom-one-light-background-2);
-
-  /* this is for the area behind the tabs of the notebooks open */
-  --jp-layout-color3: var(--atom-one-light-background-1);
-
-  --jp-layout-color4: var(--atom-one-light-background-2);
+  --jp-layout-color0: var(--one-light-white-0);
+  --jp-layout-color1: var(--one-light-white-1);
+  --jp-layout-color2: var(--one-light-white-2);
+  --jp-layout-color3: var(--one-light-white-1);
+  --jp-layout-color4: var(--one-light-white-2);
 
   /* Colour for all the SVG buttons (sidebar, topbar etc) */
-  --jp-icon-contrast-color0: var(--atom-one-light-button-gray);
-  --jp-icon-contrast-color1: var(--atom-one-light-button-gray);
+  --jp-icon-contrast-color0: var(--one-light-gray);
+  --jp-icon-contrast-color1: var(--one-light-gray);
 
   /* Brand/accent */
-  --jp-brand-color0: var(--atom-one-light-blue-0);
-  /* selected cell colour, bar to left of cell, selected file in browser */
-  --jp-brand-color1: var(--atom-one-light-blue-0);
-  --jp-brand-color2: var(--atom-one-light-off-white);
+  --jp-brand-color0: var(--one-light-blue-0);
+  --jp-brand-color1: var(--one-light-blue-0);
+  --jp-brand-color2: var(--one-light-white-1);
   --jp-brand-color3: var(--md-blue-100);
 
   --jp-accent-color0: var(--md-green-500);
@@ -323,9 +305,9 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* multi select colour */
   /* Rendermime styles */
-  --jp-rendermime-error-background: rgba(244, 67, 54, .28);
-  --jp-rendermime-table-row-background: var(--atom-one-light-background-1);
-  --jp-rendermime-table-row-hover-background: var(--atom-one-light-gray-1);
+  --jp-rendermime-error-background: rgba(244, 67, 54, .05);
+  --jp-rendermime-table-row-background: var(--one-light-white-1);
+  --jp-rendermime-table-row-hover-background: var(--one-light-mono-1);
 
   /* Dialog specific styles */
   --jp-dialog-background: rgba(0, 0, 0, .6);
@@ -342,25 +324,24 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-toolbar-active-background: var(--jp-layout-color0);
 
   /* Input field styles */
-  --jp-input-box-shadow: inset 0 0 2px var(--atom-one-light-off-white);
+  --jp-input-box-shadow: inset 0 0 2px var(--one-light-white-1);
   --jp-input-active-background: var(--jp-layout-color0);
   --jp-input-hover-background: var(--jp-layout-color2);
   --jp-input-background: var(--jp-layout-color0);
-  --jp-input-border-color: var(--jp-border-color1);
   --jp-input-active-border-color: var(--jp-brand-color1);
 
   /* General editor styles */
   --jp-editor-selected-background: var(--jp-layout-color2);
   --jp-editor-selected-focused-background: rgba(33, 150, 243, .24);
-  --jp-editor-cursor-color: var(--atom-one-light-mono-1);
+  --jp-editor-cursor-color: var(--jp-ui-font-color0);
 
   /* Vega extension styles */
-  --jp-vega-background: var(--atom-one-light-background-0);
+  --jp-vega-background: var(--md-grey-400);
 
   /* Sidebar-related styles */
   --jp-sidebar-min-width: 180px;
-  /*--jp-SideBar-background: var(--atom-one-light-background-0);*/
-  --jp-main-dock-panel-background: var(--atom-one-light-background-0);
+  /*--jp-SideBar-background: var(--one-light-white-0);*/
+  --jp-main-dock-panel-background: var(--one-light-white-0);
 
   /* Search-related styles */
   --jp-search-toggle-off-opacity: 0.5;
@@ -370,18 +351,14 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* scrollbar related styles. Supports every browser except Edge.
 	 * On Firefox, only the color settings are respected.
 	 */
-  --jp-scrollbar-background-color: var(--atom-one-light-background-0);
-  /* the minimum gap between the thumb and the ends of a scrollbar */
+  /* --jp-scrollbar-background-color: var(--one-light-white-0); */
   --jp-scrollbar-endpad: 3px;
-  /* need to specify thumb color as an RGB triplet */
   --jp-scrollbar-thumb-color: 167, 167, 167;
-  /* the space in between the sides of the thumb and the track */
   --jp-scrollbar-thumb-margin: 5px;
-  /* set to a large-ish value for rounded endcaps on the thumb */
   --jp-scrollbar-thumb-radius: 9px;
 
   /* Notebook specific styles */
-  --jp-notebook-padding: 0px 10px 0px 0px;
+  --jp-notebook-padding: 0px 0px 0px 0px;
   --jp-notebook-select-background: var(--jp-layout-color1);
   --jp-notebook-multiselected-color: rgba(33, 150, 243, .24);
 
@@ -394,50 +371,3 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-notebook-scroll-padding: calc(100% - var(--jp-code-font-size) * var(--jp-code-line-height) - var(--jp-code-padding) - var(--jp-cell-padding) - 1px);
 }
 
-/* line number background */
-.cm-s-jupyter .CodeMirror-activeline-background,
-.cm-s-jupyter .CodeMirror-gutter {
-  background-color: var(--atom-one-light-background-0);
-}
-
-.jp-DebuggerSidebar-body .jp-stack-panel-header {
-  border-width: 0px;
-  background-color: var(--jp-layout-color2);
-}
-
-.lm-ScrollBar[data-orientation='horizontal']  {
-  min-height: 8px;
-  max-height: 8px;
-  min-width: 45px;
-  border-width: 0px;
-}
-
-.lm-ScrollBar[data-orientation='horizontal'] .lm-ScrollBar-thumb {
-  height: 100%;
-  min-width: 15px;
-  border-width: 0px;
-}
-
-.lm-ScrollBar-button[data-action='decrement'] {
-  display: none;
-}
-
-.lm-ScrollBar-button[data-action='increment'] {
-  display: none;
-}
-
-.p-SplitPanel[data-orientation='horizontal'] > .p-SplitPanel-handle:after, .lm-SplitPanel[data-orientation='horizontal'] > .lm-SplitPanel-handle:after {
-  min-width: 16px;
-}
-
-.jp-DirListing-item.jp-mod-selected {
-  background: #dcdcdc;
-}
-
-.jp-DirListing-item.jp-mod-selected .jp-icon-selectable[fill] {
-  fill: var(--jp-inverse-layout-color3);
-}
-
-.jp-DirListing-item.jp-mod-selected .jp-icon-selectable[fill] .jp-icon-warn0[fill] {
-  fill: var(--jp-warn-color0);
-}
