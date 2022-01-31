@@ -1,8 +1,11 @@
 {
-  "name": "@kuzen/atom-one-light",
-  "version": "0.0.1",
-  "description": " Atom One Light for JupyterLab",
-  "author": "kuzen <jldjz97@outlook.com>",
+  "name": "@okuzen/jupyterlab-atom-one-light",
+  "version": "0.1.0",
+  "description": "Atom One Light for JupyterLab",
+  "author": {
+    "name": "okuzen",
+    "email": "jldjz97@outlook.com"
+  },
   "keywords": [
     "jupyter",
     "jupyterlab",
@@ -18,20 +21,29 @@
   ],
   "types": "lib/index.d.ts",
   "main": "lib/index.js",
-  "directories": {
-    "lib": "lib/"
-  },
   "scripts": {
-    "build": "tsc -b",
-    "clean": "rimraf lib && rimraf static && rimraf tsconfig.tsbuildinfo",
-    "prepare": "npm run clean && npm run build",
-    "watch": "tsc -b --watch"
+    "build": "jlpm run build:lib && jlpm run build:labextension:dev",
+    "build:all": "jlpm run build:lib && jlpm run build:labextension",
+    "build:labextension": "jupyter labextension build .",
+    "build:labextension:dev": "jupyter labextension build --development True .",
+    "build:lib": "tsc",
+    "build:prod": "jlpm run clean && jlpm run build:lib && jlpm run build:labextension",
+    "clean": "jlpm run clean:lib",
+    "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
+    "clean:labextension": "rimraf jupyterlab-atom-one-light/labextension",
+    "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
+    "install:extension": "jlpm run build",
+    "prepare": "jlpm run clean && jlpm run build:prod",
+    "watch": "run-p watch:src watch:labextension",
+    "watch:labextension": "jupyter labextension watch .",
+    "watch:src": "tsc -w"
   },
   "dependencies": {
     "@jupyterlab/application": "^3.0.0",
     "@jupyterlab/apputils": "^3.0.0"
   },
   "devDependencies": {
+    "@jupyterlab/builder": "^3.1.0",
     "rimraf": "~3.0.0",
     "typedoc": "~0.21.2",
     "typescript": "~4.1.3"
@@ -41,14 +53,15 @@
   },
   "jupyterlab": {
     "extension": true,
-    "themePath": "style/index.css"
+    "themePath": "style/index.css",
+    "outputDir": "jupyterlab_atom_one_light/labextension"
   },
-  "homepage": "https://github.com/kuzen/jupyterlab_atom_one_light",
+  "homepage": "https://github.com/kuzen/jupyterlab-atom-one-light",
   "bugs": {
-    "url": "https://github.com/kuzen/jupyterlab_atom_one_light/issues"
+    "url": "https://github.com/kuzen/jupyterlab-atom-one-light/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kuzen/jupyterlab_atom_one_light.git"
+    "url": "https://github.com/kuzen/jupyterlab-atom-one-light.git"
   }
 }

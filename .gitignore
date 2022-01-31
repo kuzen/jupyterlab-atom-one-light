@@ -1,6 +1,12 @@
 node_modules/
 .vscode/
 samples/
+.ipynb_checkpoints/
+.virtual_documents/
+*.egg-info/
+jupyterlab_atom_one_light/labextension
+build/
+dist/
 
 tsconfig.tsbuildinfo
 package-lock.json

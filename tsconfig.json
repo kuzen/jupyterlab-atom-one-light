@@ -20,24 +20,12 @@
     "types": [],
     "outDir": "lib",
     "rootDir": "src"
-  },
+  }, 
+  "baseUrl": ".",
   "include": [
     "src/*"
   ],
   "paths": {
-    "application": [
-      "node_modules/jquery/dist/jquery"
-    ] // This mapping is relative to "baseUrl"
-  },
-  "references": [
-    {
-      "@jupyterlab/application": "./node_modules/@jupyterlab/application"
-    },
-    {
-      "@jupyterlab/apputils": "./node_modules/@jupyterlab/apputils"
-    },
-    {
-      "@jupyterlab/translation": "./node_modules/@jupyterlab/translation"
-    }
-  ]
+      "@jupyterlab/*": ["../jupyterlab/packages/*"]
+  }
 }

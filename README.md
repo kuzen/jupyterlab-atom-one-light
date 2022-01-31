@@ -2,11 +2,18 @@
 
 Inspired by [VSCode Atom One Light](https://github.com/akamud/vscode-theme-onelight) which is base on [Atom's One Light theme](https://github.com/atom/one-light-syntax).
 
-**WIP**: This project is under development. Many styles are not finished yet. Only test JupyterLab 3.2.8 in Chrome 79 and Edge 79.
+Only test JupyterLab 3.2.8 in Chrome 79 and Edge 79.
 
 ![screenshot](./img/screenshot.png)
 
 ## Install
+
+
+```shell
+jupyter labextension install kuzen/jupyterlab-atom-one-light
+```
+
+or
 
 ```shell
 git clone https://github.com/kuzen/jupyterlab-atom-one-light

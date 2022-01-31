@@ -20,7 +20,7 @@
       translator: ITranslator
     ) => {
       const trans = translator.load('jupyterlab');
-      const style = '@kuzen/atom-one-light/index.css';
+      const style = '@okuzen/atom-one-light/index.css';
       manager.register({
         name: 'Atom One Light',
         displayName: trans.__('Atom One Light'),
